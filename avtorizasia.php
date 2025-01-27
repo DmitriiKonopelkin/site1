@@ -25,17 +25,17 @@ while($row_fetch_assoc[$row]) {
     $row['password'];
 }
 
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма заявок услуг</title>
+    <title>Авторизация</title>
     <style>
-     body {
+        body {
             font-family:arial;
             background-color:aqua;
         }
@@ -47,7 +47,7 @@ while($row_fetch_assoc[$row]) {
             margin-bottom:15px;
         }
 
-        form input[type='tel'] {
+        form input[type='password'] {
             font-size:16px;
             padding:15px 10px;
             border:1px solid #ebb217;
@@ -63,22 +63,15 @@ while($row_fetch_assoc[$row]) {
     </style>
 </head>
 <body>
-    <h1>Форма заявок услуг</h1>
-    <form action='#' method='post'>
-        <input type='text' name='name' placeholder='Имя'/>
+    <h1>Авторизация</h1>
+    <form action='form.php' method='post'>
+        <input type='text' name='username' placeholder='Имя пользователя'/>
         <div>
-            <input type='text' name='surname' placeholder='Фамилия'/>
-        </div>
-        <div>
-        <input type='text' name='middle_name' placeholder='Отчество'/>
-        </div>
-        <div>
-            <input type='tel' name='tel' placeholder='Номер телефона'/>
+            <input type='password' name='password' placeholder='Пароль'/>
         </div>
         <div>
             <input type='submit' value='Отправить'/>
         </div>
     </form>
-    <a href='index.php'>index.php</a>
 </body>
 </html>
