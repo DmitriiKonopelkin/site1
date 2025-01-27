@@ -132,10 +132,10 @@
         <nav>
             <a href='index.php'>Главная</a>
             <a href='portfolio.php'>Портфолио</a>
-            <a href='#'>Технологии</a>
-            <a href='#'>Стоимость</a>
-            <a href='#'>Контакты</a>
-            <a href='#'>Услуги</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
         </nav>
         <form name='search' action='#' method='post'>
             <input type='text' name='search' placeholder='Поиск по сайту'/>

@@ -17,6 +17,22 @@
     </style>
 </head>
 <body>
+<header class='container-fluid'>
+      <div class="container d-flex">
+        <h1>LOGO</h1>
+        <nav>
+            <a href='index.php'>Главная</a>
+            <a href='portfolio.php'>Портфолио</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
+        </nav>
+        <form name='search' action='#' method='post'>
+            <input type='text' name='search' placeholder='Поиск по сайту'/>
+        </form>
+      </div>
+    </header>
     <h1>Стоимость работ</h1>
     <p>
     Багетная мастерская №1 – это команда профессионалов, которые любят свое дело! Талантливые дизайнеры подберут для Вас красивое оформление картины, 

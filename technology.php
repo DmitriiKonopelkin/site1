@@ -17,6 +17,22 @@
     </style>
 </head>
 <body>
+<header class='container-fluid'>
+      <div class="container d-flex">
+        <h1>LOGO</h1>
+        <nav>
+            <a href='index.php'>Главная</a>
+            <a href='portfolio.php'>Портфолио</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
+        </nav>
+        <form name='search' action='#' method='post'>
+            <input type='text' name='search' placeholder='Поиск по сайту'/>
+        </form>
+      </div>
+    </header>
     <h1>Использованные технологии</h1>
     <p>
     Художественно - производственная мастерская «Багетка» открылась в Москве в далеком 2006 году. Наша команда специалистов имеет богатый опыт в сфере оформления различных 

@@ -25,6 +25,22 @@
     </style>
 </head>
 <body>
+<header class='container-fluid'>
+      <div class="container d-flex">
+        <h1>LOGO</h1>
+        <nav>
+            <a href='index.php'>Главная</a>
+            <a href='portfolio.php'>Портфолио</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
+        </nav>
+        <form name='search' action='#' method='post'>
+            <input type='text' name='search' placeholder='Поиск по сайту'/>
+        </form>
+      </div>
+    </header>
     <h1>Контактная информация</h1>
      <form name='tel' action='#' method='post'>
         <input type='tel' name='tel' placeholder='Введите номер телефона'/>

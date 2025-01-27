@@ -38,6 +38,22 @@
     </style>
 </head>
 <body>
+<header class='container-fluid'>
+      <div class="container d-flex">
+        <h1>LOGO</h1>
+        <nav>
+            <a href='index.php'>Главная</a>
+            <a href='portfolio.php'>Портфолио</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
+        </nav>
+        <form name='search' action='#' method='post'>
+            <input type='text' name='search' placeholder='Поиск по сайту'/>
+        </form>
+      </div>
+    </header>
     <h1>Портфолио</h1>
     <p>Багетная мастерская – это место, где можно заказать изготовление рамок для фотографий, картин, плакатов и других работ.
     Недаром такие мастерские пользовались популярностью среди любителей и профессионалов, среди художников разных направлений и людей, которые ценят прекрасное.</p>

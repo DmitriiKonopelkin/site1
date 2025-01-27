@@ -63,8 +63,24 @@ while($row_fetch_assoc[$row]) {
     </style>
 </head>
 <body>
+<header class='container-fluid'>
+      <div class="container d-flex">
+        <h1>LOGO</h1>
+        <nav>
+            <a href='index.php'>Главная</a>
+            <a href='portfolio.php'>Портфолио</a>
+            <a href='technology.php'>Технологии</a>
+            <a href='price.php'>Стоимость</a>
+            <a href='contact.php'>Контакты</a>
+            <a href='form.php'>Заявка</a>
+        </nav>
+        <form name='search' action='#' method='post'>
+            <input type='text' name='search' placeholder='Поиск по сайту'/>
+        </form>
+      </div>
+    </header>
     <h1>Форма заявок услуг</h1>
-    <form action='#' method='post'>
+    <form action='avtorizasia.php' method='post'>
         <input type='text' name='name' placeholder='Имя'/>
         <div>
             <input type='text' name='surname' placeholder='Фамилия'/>
