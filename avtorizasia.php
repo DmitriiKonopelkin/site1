@@ -1,13 +1,17 @@
 <?php
 
-require "db.php";
+$mysqli = new mysqli("localhost", "root", "root", "orders");
+
+if ($mysqli->connect_error) {
+    die("Ошибка подключения: " . $mysqli->connect_error);
+}
 
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
-    $login = $_POST['login'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username'])) {
+    $username = $_POST['username'];
     $password = $_POST['password'];
-    $result = $mysqli->query("SELECT id FROM users WHERE login = '$login' AND password = '$password'"); 
+    $result = $mysqli->query("SELECT id FROM users WHERE username = '$username' AND password = '$password'"); 
     if ($user = $result->fetch_assoc()) { 
         $_SESSION['user_id'] = $user['id'];
         header('Location: index.php');
@@ -57,8 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 </head>
 <body>
     <h1>Авторизация</h1>
-    <form action='' method='post'>
-        <input type='text' name='login' placeholder='Логин'/>
+    <form action='avtorizasia.php' method='post'>
+        <input type='text' name='username' placeholder='Имя пользователя'/>
         <div>
             <input type='password' name='password' placeholder='Пароль'/>
         </div>
