@@ -1,29 +1,22 @@
 <?php
 
-$host='localhost';
-$login='test5';
-$pass='test5';
-$db_name='2024inform';
+require "db.php";
 
-$conn= new mysqli('localhost', 'test5', 'test5', '2024inform');
+session_start();
 
-if($conn->connect_error) {
-    die("ошибка подключения к БД");
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+    $result = $mysqli->query("SELECT id FROM users WHERE login = '$login' AND password = '$password'"); 
+    if ($user = $result->fetch_assoc()) { 
+        $_SESSION['user_id'] = $user['id'];
+        header('Location: index.php');
+        exit;
+    } else {
+        echo "Неверное имя пользователя или пароль";
+    }
 }
 
-if($_SERVER['REQUEST_METHOD']== 'POST') {
-    $id= $_POST['id'];
-    $username= $_POST['username'];
-    $password= $_POST['password'];
-}
-
-$sql= "SELECT * FROM `users`";
-
-while($row_fetch_assoc[$row]) {
-    $row['id'];
-    $row['username'];
-    $row['password'];
-}
 
 
 ?>
@@ -64,8 +57,8 @@ while($row_fetch_assoc[$row]) {
 </head>
 <body>
     <h1>Авторизация</h1>
-    <form action='form.php' method='post'>
-        <input type='text' name='username' placeholder='Имя пользователя'/>
+    <form action='' method='post'>
+        <input type='text' name='login' placeholder='Логин'/>
         <div>
             <input type='password' name='password' placeholder='Пароль'/>
         </div>
