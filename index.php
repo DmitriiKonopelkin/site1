@@ -130,7 +130,7 @@
         <a href='technology.php'>Технологии</a>
         <a href='price.php'>Стоимость</a>
         <a href='#'>Контакты</a>
-        <a href='#'>Заявки</a>
+        <a href='form.php'>Заявки</a>
        </nav>
        <form name='search' action='#' method='post'>
         <input type='text' name='search' placeholder='Поиск по сайту'/>
