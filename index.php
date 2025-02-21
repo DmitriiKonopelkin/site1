@@ -30,7 +30,7 @@
             font-family:arial;
             font-size:16px;
             width:100%;
-            background-color:aqua;
+            background-color:#c4c4c4;
         }
 
         header {
@@ -129,7 +129,7 @@
         <a href='portfolio.php'>Портфолио</a>
         <a href='technology.php'>Технологии</a>
         <a href='price.php'>Стоимость</a>
-        <a href='#'>Контакты</a>
+        <a href='contact.php'>Контакты</a>
         <a href='form.php'>Заявки</a>
        </nav>
        <form name='search' action='#' method='post'>
